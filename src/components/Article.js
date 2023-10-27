@@ -3,9 +3,10 @@ function Article(props) {
   return (
     <article>
       <h3>{props.value.title}</h3>
-      <small>{props.value.date}</small>
+      <small>
+        {props.value.date}. {props.value.minutes} min.read
+      </small>
       <p>{props.value.preview}</p>
-      <p>{props.value.minutes}</p>
     </article>
   );
 }
